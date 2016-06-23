@@ -1,10 +1,18 @@
-# parse-server-example
+# 1poll parse server
 
-Example project using the [parse-server](https://github.com/ParsePlatform/parse-server) module on Express.
+A [Doodle](http://doodle.com)-like web app that publishes polls in 1 click.
+
+Made with [React.js](https://facebook.github.io/react/), [Material-UI](material-ui.com) and [Parse Server](https://github.com/ParsePlatform/parse-server).
 
 Read the full Parse Server guide here: https://github.com/ParsePlatform/parse-server/wiki/Parse-Server-Guide
 
-### For Local Development
+## Usage
+
+Try it from [adrienjoly.com/1poll](http://adrienjoly.com/1poll).
+
+See scripts from the `package.json` file.
+
+## Local setup
 
 * Make sure you have at least Node 4.3. `node --version`
 * Clone this repo and change directory to it.
@@ -16,17 +24,16 @@ Read the full Parse Server guide here: https://github.com/ParsePlatform/parse-se
 * You now have a database named "dev" that contains your Parse data
 * Install ngrok and you can test with devices
 
-### Getting Started With Heroku + mLab Development
+## Deployment to Heroku + mLab
 
-#### With the Heroku Button
+### With the Heroku Button
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-#### Without It
+### Without It
 
 * Clone the repo and change directory to it
 * Log in with the [Heroku Toolbelt](https://toolbelt.heroku.com/) and create an app: `heroku create`
 * Use the [mLab addon](https://elements.heroku.com/addons/mongolab): `heroku addons:create mongolab:sandbox --app YourAppName`
 * By default it will use a path of /parse for the API routes.  To change this, or use older client SDKs, run `heroku config:set PARSE_MOUNT=/1`
 * Deploy it with: `git push heroku master`
-
